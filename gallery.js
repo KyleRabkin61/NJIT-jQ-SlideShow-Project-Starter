@@ -4,7 +4,7 @@ const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
-  $('.details').hide() // Hide details initially
+  $('.details').hide() // Hide details initially 
 
   // Call a function here to start the timer for the slideshow
 
