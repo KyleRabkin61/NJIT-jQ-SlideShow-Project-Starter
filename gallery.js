@@ -39,11 +39,12 @@ function fetchJSON() {
     success: function (data) {
 
       mImages = data.images;
-      
-      document.getElementById('photo').src = mImages[mCurrentIndex].imgPath
-      document.getElementById('country').textContent = `Country: ${mImages[mCurrentIndex].country}`
-      document.getElementById('animal').textContent = `Animal: ${mImages[mCurrentIndex].animal}`
-      document.getElementById('description').textContent = `Description: ${mImages[mCurrentIndex].description}`
+
+      document.getElementById('photo').src = mImages[0].imgPath
+      document.getElementById('country').textContent = `Country: ${mImages[0].country}`
+      document.getElementById('animal').textContent = `Animal: ${mImages[0].animal}`
+      document.getElementById('description').textContent = `Description: ${mImages[0].description}`
+
     },
     error: function () {
       console.log('Connection error.');
@@ -64,6 +65,7 @@ function swapPhoto() {
 function showNextPhoto() {
   // Increment mCurrentIndex and call swapPhoto()
   mCurrentIndex++
+  swapPhoto()
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
   if (mCurrentIndex === 10) {
     mCurrentIndex = 0
@@ -75,6 +77,7 @@ function showNextPhoto() {
 function showPrevPhoto() {
   // Decrement mCurrentIndex and call swapPhoto()
   mCurrentIndex--
+  swapPhoto()
   // Ensure it loops to the end if mCurrentIndex is less than 0
   if (mCurrentIndex === -1) {
     mCurrentIndex = 9
