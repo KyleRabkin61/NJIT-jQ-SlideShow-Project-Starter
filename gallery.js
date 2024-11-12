@@ -40,10 +40,7 @@ function fetchJSON() {
 
       mImages = data.images;
 
-      document.getElementById('photo').src = mImages[0].imgPath
-      document.getElementById('country').textContent = `Country: ${mImages[0].country}`
-      document.getElementById('animal').textContent = `Animal: ${mImages[0].animal}`
-      document.getElementById('description').textContent = `Description: ${mImages[0].description}`
+      swapPhoto();
 
     },
     error: function () {
@@ -57,8 +54,13 @@ function fetchJSON() {
 // Function to swap and display the next photo in the slideshow
 function swapPhoto() {
   // Access mImages[mCurrentIndex] to update the image source and details
+  let theData = mImages[mCurrentIndex];
   // Update the #photo element's src attribute with the current image's path
+  $('#photo').attr('src', theData.imgPath)
   // Update the .location, .description, and .date elements with the current image's details
+  $('#country').text(`Country: ${theData.country}`)
+  $('#animal').text(`Animal: ${theData.animal}`)
+  $('#description').text(`Description: ${theData.description}`)
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached

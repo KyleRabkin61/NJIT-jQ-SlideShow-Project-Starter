@@ -51,13 +51,13 @@
         {
             "imgPath": "img/countries/india.jpg",
             "country": "India",
-            "Animal": "Tiger",
+            "animal": "Tiger",
             "description": "lorem"
         },
         {
             "imgPath": "img/countries/china.jpg",
             "country": "China",
-            "Animal": "Panda",
+            "animal": "Panda",
             "description": "lorem"
         }
   ]
