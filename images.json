@@ -4,61 +4,61 @@
             "imgPath": "img/countries/america.jpg",
             "country": "United States",
             "animal": "Bald Eagle",
-            "description": "lorem"
+            "name": "Thunderclaw"
         },
         {
             "imgPath": "img/countries/canada.jpg",
             "country": "Canada",
             "animal": "Beaver",
-            "description": "lorem"
+            "name": "Grizzlewood"
         },
         {
             "imgPath": "img/countries/france.jpg",
             "country": "France",
             "animal": "Rooster",
-            "description": "lorem"
+            "name": "Le Ferocious"
         },
         {
             "imgPath": "img/countries/greatbritain.jpg",
             "country": "Great Britain",
             "animal": "Lion",
-            "description": "lorem"
+            "name": "Regal Thorne"
         },
         {
             "imgPath": "img/countries/mexico.jpg",
             "country": "Mexico",
             "animal": "Gorilla",
-            "description": "lorem"
+            "name": "Rocko"
         },
         {
             "imgPath": "img/countries/russia.jpg",
             "country": "Russia",
             "animal": "Bear",
-            "description": "lorem"
+            "name": "Ivan the Ironpaw"
         },
         {
             "imgPath": "img/countries/germany.jpg",
             "country": "Germany",
             "animal": "Pig",
-            "description": "lorem"
+            "name": "Pork Chop"
         },
         {
             "imgPath": "img/countries/italy.jpg",
             "country": "Italy",
             "animal": "Fox",
-            "description": "lorem"
+            "name": "Blaze"
         },
         {
             "imgPath": "img/countries/india.jpg",
             "country": "India",
             "animal": "Tiger",
-            "description": "lorem"
+            "name": "Simba"
         },
         {
             "imgPath": "img/countries/china.jpg",
             "country": "China",
             "animal": "Panda",
-            "description": "lorem"
+            "name": "Dragon"
         }
   ]
 }

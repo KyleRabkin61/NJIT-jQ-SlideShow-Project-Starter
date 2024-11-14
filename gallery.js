@@ -60,7 +60,7 @@ function swapPhoto() {
   // Update the .location, .description, and .date elements with the current image's details
   $('#country').text(`Country: ${theData.country}`)
   $('#animal').text(`Animal: ${theData.animal}`)
-  $('#description').text(`Description: ${theData.description}`)
+  $('#description').text(`Name: ${theData.name}`)
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
