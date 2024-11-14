@@ -67,11 +67,12 @@ function swapPhoto() {
 function showNextPhoto() {
   // Increment mCurrentIndex and call swapPhoto()
   mCurrentIndex++
-  swapPhoto()
   // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
   if (mCurrentIndex === 10) {
+    // Update the .location, .description, and .date elements with the current image's details
     mCurrentIndex = 0
   }
+  swapPhoto()
   console.log(mCurrentIndex);
 }
 
@@ -79,11 +80,11 @@ function showNextPhoto() {
 function showPrevPhoto() {
   // Decrement mCurrentIndex and call swapPhoto()
   mCurrentIndex--
-  swapPhoto()
   // Ensure it loops to the end if mCurrentIndex is less than 0
   if (mCurrentIndex === -1) {
     mCurrentIndex = 9
   }
+  swapPhoto()
   console.log(mCurrentIndex);
 }
 
