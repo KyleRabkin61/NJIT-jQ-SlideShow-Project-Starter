@@ -7,7 +7,7 @@ $(document).ready(() => {
   $('.details').hide() // Hide details initially 
 
   // Call a function here to start the timer for the slideshow
-
+  startTimer();
   // Select the moreIndicator button and add a click event to:
   $('.moreIndicator').on('click', () => {
     // - toggle the rotation classes (rot90 and rot270)
@@ -40,6 +40,8 @@ function fetchJSON() {
 
       mImages = data.images;
 
+      // After JSON is loaded, call swapPhoto() to display the first image
+
       swapPhoto();
 
     },
@@ -48,8 +50,6 @@ function fetchJSON() {
     }
   });
 }
-
-// After JSON is loaded, call swapPhoto() to display the first image
 
 // Function to swap and display the next photo in the slideshow
 function swapPhoto() {
@@ -91,6 +91,7 @@ function showPrevPhoto() {
 // Starter code for the timer function
 function startTimer() {
   // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
+  setInterval(showNextPhoto, mWaitTime)
   // Consider using setInterval to achieve this functionality
   // Hint: Make sure only one timer runs at a time
 }
