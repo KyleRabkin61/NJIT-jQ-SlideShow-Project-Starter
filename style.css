@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('../img/geometry.jpg');
+    background-image: url('../img/landscape.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -15,12 +15,17 @@ body {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    border: 5px solid black;
 }
 
 /* Holds the displayed photo */
 .photoHolder {
     width: 100%;
     text-align: center;
+}
+
+#photo {
+    border: 5px solid black;
 }
 
 /* Style for the photo displayed in the slideshow */
@@ -36,7 +41,7 @@ body {
 .banner {
     font-size: 2rem; /* Increased font size for better readability */
     font-weight: bold;
-    color: #333;
+    color: #000;
     /* Optional: Customize the text color */
 }
 
@@ -59,7 +64,7 @@ body {
 
 /* Metadata container styling */
 .details {
-    border: 1px dashed #000;
+    border: 3px dashed #000;
     padding: 15px;
     background-color: #f8f9fa; /* Light background to distinguish from main area */
     border-radius: 4px;
@@ -70,6 +75,7 @@ body {
 /* Style for each paragraph in details */
 .details p {
     margin: 10px 0;
+    font-size: 20px;
 }
 
 /* Add CSS styles to rotate the element 90deg
