@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Century Gothic', sans-serif;
-    background-image: url('../img/landscape.jpg');
+    background-image: url('img/landscape.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
